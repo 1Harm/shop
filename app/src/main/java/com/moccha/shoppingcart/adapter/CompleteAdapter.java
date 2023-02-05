@@ -47,7 +47,7 @@ public class CompleteAdapter extends RecyclerView.Adapter<CompleteAdapter.ViewHo
         TextView text_price = (TextView) cardView.findViewById(R.id.item_price);
 
         text_title.setText(item.getName());
-        text_price.setText(String.format("Rp %s", String.valueOf(item.getPrice())));
+        text_price.setText(String.format("$ %s", String.valueOf(item.getPrice())));
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {

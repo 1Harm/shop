@@ -42,16 +42,16 @@ public class ItemListActivity extends AppCompatActivity {
         RecyclerView.LayoutManager layoutManager = new GridLayoutManager(this, 2);
         recyclerView.setLayoutManager(layoutManager);
 
-        if (choice.equals("drink")) {
-            items.addAll(ItemData.getListDrink());
+        if (choice.equals("perfume")) {
+            items.addAll(ItemData.getListPerfume());
             showRecyclerView(choice);
 
-        } else if (choice.equals("food")) {
-            items.addAll(ItemData.getListFood());
+        } else if (choice.equals("lipsticks")) {
+            items.addAll(ItemData.getListLipsticks());
             showRecyclerView(choice);
 
-        } else if (choice.equals("snack")) {
-            items.addAll(ItemData.getListSnack());
+        } else if (choice.equals("cream")) {
+            items.addAll(ItemData.getListCream());
             showRecyclerView(choice);
         }
     }

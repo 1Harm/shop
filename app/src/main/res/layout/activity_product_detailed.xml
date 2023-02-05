@@ -58,99 +58,12 @@
         app:layout_constraintTop_toBottomOf="@+id/back2"
         app:srcCompat="@drawable/b1" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="@color/colorBG"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:padding="3dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.791">
-
-        <ImageView
-            android:id="@+id/subtract"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/subtract_icon" />
-
-        <TextView
-            android:id="@+id/quantity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginRight="5dp"
-            android:padding="1dp"
-            android:text="1"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <ImageView
-            android:id="@+id/add"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/add_icon" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/addCart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.969">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="$"
-            android:textColor="@color/red"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/detailPrice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="2dp"
-            android:layout_marginLeft="2dp"
-            android:text="15"
-            android:textColor="@color/red"
-            android:textStyle="bold" />
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/lacquer"
-        android:text="Total Price"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.838" />
-
     <TextView
         android:id="@+id/productName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="128dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="160dp"
         android:fontFamily="@font/open_sans_bold"
         android:text="TextView"
         android:textColor="@color/black"
@@ -159,16 +72,52 @@
         app:layout_constraintTop_toBottomOf="@+id/big_image" />
 
     <TextView
+        android:id="@+id/prodPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/open_sans_bold"
+        android:text="TextView"
+        android:textColor="#4d4d4d"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/prodDesc"
+        app:layout_constraintTop_toBottomOf="@+id/prodDesc" />
+
+    <TextView
+        android:id="@+id/unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/open_sans_light"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/qty"
+        app:layout_constraintStart_toEndOf="@+id/qty"
+        app:layout_constraintTop_toTopOf="@+id/qty"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/open_sans_light"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/prodPrice"
+        app:layout_constraintTop_toBottomOf="@+id/prodPrice" />
+
+    <TextView
         android:id="@+id/prodDesc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="272dp"
         android:fontFamily="@font/open_sans_light"
         android:text="prodDesc"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.024"
         app:layout_constraintStart_toStartOf="@+id/productName"
         app:layout_constraintTop_toBottomOf="@+id/productName" />
 
@@ -222,40 +171,6 @@
         app:cornerRadius="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"></com.google.android.material.button.MaterialButton>
-
-    <TextView
-        android:id="@+id/prodPrice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/open_sans_bold"
-        android:text="TextView"
-        android:textColor="#4d4d4d"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="@+id/prodDesc"
-        app:layout_constraintTop_toBottomOf="@+id/prodDesc" />
-
-    <TextView
-        android:id="@+id/qty"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/open_sans_light"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="@+id/prodPrice"
-        app:layout_constraintTop_toBottomOf="@+id/prodPrice" />
-
-    <TextView
-        android:id="@+id/unit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:fontFamily="@font/open_sans_light"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="@+id/qty"
-        app:layout_constraintStart_toEndOf="@+id/qty"
-        app:layout_constraintTop_toTopOf="@+id/qty"
-        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/mobileNumber"

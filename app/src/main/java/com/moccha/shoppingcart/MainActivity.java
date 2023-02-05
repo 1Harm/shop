@@ -22,7 +22,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    private CardView drinks, snacks, foods, topUp;
+    private CardView perfume, cream, lip, topUp;
     RecyclerView detailedRecyclerView;
     DetailedAdapter detailedAdapter;
     List<DetailedModel> detailedModels;
@@ -32,9 +32,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         detailedRecyclerView = findViewById(R.id.shampoo_item);
-        drinks = findViewById(R.id.drinks_menu);
-        snacks = findViewById(R.id.snacks_menu);
-        foods = findViewById(R.id.foods_menu);
+        perfume = findViewById(R.id.drinks_menu);
+        cream = findViewById(R.id.snacks_menu);
+        lip = findViewById(R.id.foods_menu);
         topUp = findViewById(R.id.topUp_menu);
         LinearLayout myOrder = findViewById(R.id.my_order);
 
@@ -43,32 +43,30 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        drinks.setOnClickListener(v -> {
+        perfume.setOnClickListener(v -> {
             Intent intent = new Intent(getApplicationContext(), ItemListActivity.class);
-            String value = "drink";
+            String value = "perfume";
             intent.putExtra("choice", value);
             startActivity(intent);
         });
 
-        foods.setOnClickListener(v -> {
+        cream.setOnClickListener(v -> {
             Intent intent = new Intent(getApplicationContext(), ItemListActivity.class);
-            String value = "food";
+            String value = "cream";
             intent.putExtra("choice", value);
             startActivity(intent);
         });
 
-        snacks.setOnClickListener(v -> {
+        lip.setOnClickListener(v -> {
             Intent intent = new Intent(getApplicationContext(), ItemListActivity.class);
-            String value = "snack";
+            String value = "lipsticks";
             intent.putExtra("choice", value);
             startActivity(intent);
         });
         BottomNavigationView bottomNavigationView=findViewById(R.id.bottom_navigation);
 
-        // Set Home selected
         bottomNavigationView.setSelectedItemId(R.id.home);
 
-        // Perform item selected listener
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {

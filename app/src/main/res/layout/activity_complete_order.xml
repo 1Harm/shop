@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/mediumGray"
     tools:context=".CompleteOrderActivity">
 
     <RelativeLayout
@@ -22,11 +23,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
+            android:layout_marginStart="47dp"
             android:layout_marginEnd="10dp"
-            android:fontFamily="@font/poppins_semibold"
-            android:text="Binus EzyFoody"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:fontFamily="@font/lacquer"
+            android:text="Korean"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
 
         <LinearLayout
             android:id="@+id/main_menu"
@@ -41,14 +43,26 @@
                 android:layout_marginEnd="10dp"
                 android:fontFamily="@font/poppins_semibold"
                 android:text="Main Menu"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:textColor="@color/red"/>
 
             <ImageView
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:contentDescription="Main Menu"
-                android:src="@drawable/home" />
+                android:src="@drawable/ic_baseline_home_24" />
         </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/lobster"
+            android:text="Kaz"
+            android:textColor="@color/red"
+            android:textSize="30sp" />
     </RelativeLayout>
 
     <TextView
@@ -59,10 +73,10 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="30dp"
-        android:fontFamily="@font/poppins_semibold"
+        android:fontFamily="@font/lobster"
         android:text="@string/your_order_complete_n_thank_you"
         android:textAlignment="center"
-        android:textColor="@android:color/holo_red_light"
+        android:textColor="@color/red"
         android:textSize="20sp" />
 
     <TextView
@@ -74,10 +88,10 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="30dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="Total: Rp. 105.000,00"
+        android:fontFamily="@font/lobster"
+        android:text="Total price: $. 105.000,00"
         android:textAlignment="center"
-        android:textColor="@android:color/holo_red_light"
+        android:textColor="@color/red"
         android:textSize="20sp" />
 
     <androidx.recyclerview.widget.RecyclerView

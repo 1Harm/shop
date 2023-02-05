@@ -10,37 +10,37 @@ public class ItemData {
     public static ArrayList<Item> orders = new ArrayList<>();
 
     @NonNull
-    public static ArrayList<Item> getListDrink() {
+    public static ArrayList<Item> getListPerfume() {
         ArrayList<Item> drinks = new ArrayList<>();
-        drinks.add(new Item("Mineral Water", 4000, R.drawable.mineral));
-        drinks.add(new Item("Mango Juice", 8000, R.drawable.mango));
-        drinks.add(new Item("Apple Juice", 9000, R.drawable.apple));
-        drinks.add(new Item("Avocado Juice", 7000, R.drawable.avocado));
-        drinks.add(new Item("Beet Juice", 8000, R.drawable.beet));
-        drinks.add(new Item("Orange Juice", 7000, R.drawable.orange));
-        drinks.add(new Item("Strawberry Juice", 10000, R.drawable.straw));
-        drinks.add(new Item("Grape Juice", 8000, R.drawable.grape));
+        drinks.add(new Item("Perfume", 400, R.drawable.perfume1));
+        drinks.add(new Item("Perfume", 800, R.drawable.p2));
+        drinks.add(new Item("Perfume", 900, R.drawable.p3));
+        drinks.add(new Item("Perfume", 700, R.drawable.p4));
+        drinks.add(new Item("Perfume", 800, R.drawable.p5));
+        drinks.add(new Item("Perfume", 700, R.drawable.p6));
+        drinks.add(new Item("Perfume", 100, R.drawable.p7));
+        drinks.add(new Item("Air Perfume", 800, R.drawable.p8));
         return drinks;
     }
 
     @NonNull
-    public static ArrayList<Item> getListFood() {
-        ArrayList<Item> foods = new ArrayList<>();
-        foods.add(new Item("Sirloin Steak", 45000, R.drawable.sirloin));
-        foods.add(new Item("Burger", 30000, R.drawable.burger));
-        foods.add(new Item("Spaghetti", 28000, R.drawable.spagetti));
-        foods.add(new Item("Soto Ayam", 25000, R.drawable.soto));
-        return foods;
+    public static ArrayList<Item> getListLipsticks() {
+        ArrayList<Item> lip = new ArrayList<>();
+        lip.add(new Item("Lipsticks", 45, R.drawable.l1));
+        lip.add(new Item("Lipsticks", 30, R.drawable.l2));
+        lip.add(new Item("Lipsticks", 28, R.drawable.l3));
+        lip.add(new Item("Lipsticks", 25, R.drawable.l4));
+        return lip;
     }
 
     @NonNull
-    public static ArrayList<Item> getListSnack() {
-        ArrayList<Item> snacks = new ArrayList<>();
-        snacks.add(new Item("Donut", 15000, R.drawable.donut));
-        snacks.add(new Item("French Fries", 10000, R.drawable.fries));
-        snacks.add(new Item("Bread", 13000, R.drawable.bread));
-        snacks.add(new Item("Cupcake", 16000, R.drawable.cupcakes));
-        return snacks;
+    public static ArrayList<Item> getListCream() {
+        ArrayList<Item> cream = new ArrayList<>();
+        cream.add(new Item("Hand cream", 30, R.drawable.cream2));
+        cream.add(new Item("Dreams", 40, R.drawable.cream3));
+        cream.add(new Item("Face cream", 70, R.drawable.cream4));
+        cream.add(new Item("Cream", 50, R.drawable.cream5));
+        return cream;
     }
 
     @NonNull

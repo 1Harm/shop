@@ -3,8 +3,6 @@
     <string name="left_bar">Left Bar</string>
     <string name="cart_icon">Shopping Cart</string>
     <string name="drinks">Drinks</string>
-    <string name="drinks_image">Drinks Image</string>
-    <string name="snack_image">Snack image</string>
     <string name="snacks">Snacks</string>
     <string name="foods">Foods</string>
     <string name="foods_image">Foods image</string>
@@ -50,4 +48,9 @@
     <string name="welcome_to_kazkorean">Welcome to KazKorean</string>
     <string name="shampoo">Shampoo</string>
     <string name="detaildescription">detailDescription</string>
+    <string name="perfume">Perfume</string>
+    <string name="lipsticks">Lipsticks</string>
+    <string name="lipsticks_image">Lipsticks image</string>
+    <string name="cream">Cream</string>
+    <string name="cream_image">Cream image</string>
 </resources>

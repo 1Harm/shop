@@ -98,7 +98,7 @@
                         android:layout_width="150dp"
                         android:layout_height="90dp"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/profile_pic" />
+                        android:src="@drawable/ic_baseline_person_pin_24" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -106,22 +106,17 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
+
                     <TextView
+                        android:id="@+id/userName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/lobster"
-                        android:text="Sanskar Tiwari"
+                        android:text="Kuzembayev Yeldar"
                         android:textColor="#424242"
                         android:textSize="21sp"
                         android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/lobster"
-                        android:text="Android Developer"
-                        android:textSize="14sp" />
 
 
                 </LinearLayout>
@@ -131,81 +126,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:paddingBottom="10dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:gravity="center"
-                        android:padding="8dp">
-
-                        <ImageView
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"
-                            android:background="@drawable/circular_grey_bordersolid"
-                            android:padding="10dp"
-                            android:src="@drawable/tickinsidecircle" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="97%"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="2dp"
-                                android:text="@string/job_success"
-                                android:textSize="12sp" />
-                        </LinearLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:gravity="center"
-                        android:padding="8dp">
-
-                        <ImageView
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"
-                            android:background="@drawable/circular_grey_bordersolid"
-                            android:padding="10dp"
-                            android:src="@drawable/star" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="4.8/5"
-                                android:textSize="12sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="2dp"
-                                android:text="@string/ratings"
-                                android:textSize="12sp" />
-                        </LinearLayout>
-                    </LinearLayout>
-
-                </LinearLayout>
+                    android:paddingBottom="10dp"/>
             </LinearLayout>
 
             <!--Option Bar-->
@@ -238,38 +159,10 @@
                     android:layout_height="match_parent"
                     android:background="@color/blue_light" />
 
-                <TextView
-                    android:id="@+id/experiencebtn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:fontFamily="@font/lobster"
-                    android:gravity="center"
-                    android:padding="13dp"
-                    android:text="Experience"
-                    android:textAllCaps="true"
-                    android:textColor="@color/blue_light"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
-
                 <LinearLayout
                     android:layout_width="1dp"
                     android:layout_height="match_parent"
                     android:background="@color/green_dark" />
-
-                <TextView
-                    android:id="@+id/reviewbtn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:fontFamily="@font/lobster"
-                    android:gravity="center"
-                    android:padding="13dp"
-                    android:text="Review"
-                    android:textAllCaps="true"
-                    android:textColor="@color/blue_light"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -370,11 +263,12 @@
                             <ImageView
                                 android:layout_width="40dp"
                                 android:layout_height="40dp"
-                                android:background="@drawable/circular_grey_bordersolid"
+                                android:background="@color/red"
                                 android:padding="10dp"
                                 android:src="@drawable/ic_call_24dp" />
 
                             <TextView
+                                android:id="@+id/phone"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="20dp"
@@ -394,7 +288,7 @@
                             <ImageView
                                 android:layout_width="40dp"
                                 android:layout_height="40dp"
-                                android:background="@drawable/circular_grey_bordersolid"
+                                android:background="@color/red"
                                 android:padding="10dp"
                                 android:src="@drawable/ic_email_24dp" />
 
@@ -418,7 +312,7 @@
                             <ImageView
                                 android:layout_width="40dp"
                                 android:layout_height="40dp"
-                                android:background="@drawable/circular_grey_bordersolid"
+                                android:background="@color/red"
                                 android:padding="10dp"
                                 android:src="@drawable/ic_location_24dp" />
 
@@ -426,7 +320,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="20dp"
-                                android:text="Leeds, United Kingdom"
+                                android:text="Astana, Kazakhstan"
                                 android:textSize="15sp"
                                 android:textColor="@color/gray"
                                 android:fontFamily="@font/lobster" />
@@ -436,109 +330,6 @@
                 </LinearLayout>
 
                 <!--Skills Details-->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/circularbordersolid"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/skills"
-                            android:textSize="17sp"
-                            android:textStyle="bold" />
-
-
-
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Edit"
-                            android:textColor="#FFCF66"
-                            android:textSize="14sp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_vertical"
-                            android:paddingRight="8dp">
-
-                            <ImageView
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
-                                android:background="@drawable/circular_grey_bordersolid"
-                                android:padding="10dp"
-                                android:src="@drawable/paintbrush" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:text="Expert in Photoshop, Adobe XD"
-                                android:textSize="15sp"/>
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:gravity="center_vertical"
-                            android:paddingRight="8dp">
-
-                            <ImageView
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
-                                android:background="@drawable/circular_grey_bordersolid"
-                                android:padding="10dp"
-                                android:src="@drawable/ic_email_24dp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:text="sanskar@theindianappguy.com"
-                                android:textSize="15sp" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:gravity="center_vertical"
-                            android:paddingRight="8dp">
-
-                            <ImageView
-                                android:layout_width="40dp"
-                                android:layout_height="40dp"
-                                android:background="@drawable/circular_grey_bordersolid"
-                                android:padding="10dp"
-                                android:src="@drawable/ic_location_24dp" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:text="Leeds, United Kingdom"
-                                android:textSize="15sp" />
-                        </LinearLayout>
-
-                    </LinearLayout>
-                </LinearLayout>
             </LinearLayout>
 
             <!--Experience Bottom Cards-->
@@ -546,77 +337,7 @@
                 android:id="@+id/experience"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/circularbordersolid"
-                    android:orientation="horizontal"
-                    android:padding="20dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:gravity="center_vertical">
-
-                        <ImageView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:padding="6dp"
-                            android:src="@drawable/search" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/lobster"
-                                android:text="Android Developer"
-                                android:textSize="14sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="3dp"
-                                android:fontFamily="@font/lobster"
-                                android:text="at TheIndianAppGuy"
-                                android:textSize="12sp" />
-                        </LinearLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:gravity="center_vertical">
-
-                        <ImageView
-                            android:layout_width="9dp"
-                            android:layout_height="9dp"
-                            android:padding="1dp"
-                            android:src="@drawable/circleyellowfil" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="5dp"
-                            android:text="Sep 2010 - Jan 2013"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </LinearLayout>
+                android:orientation="vertical"/>
 
             <!--Review Bottom Cards-->
             <LinearLayout

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/mediumGray"
     tools:context=".ItemOrderActivity">
 
     <RelativeLayout
@@ -35,15 +36,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
-                android:fontFamily="@font/poppins_semibold"
+                android:fontFamily="@font/lacquer"
                 android:text="My Order"
-                android:textSize="16sp" />
+                android:textColor="@color/red"
+                android:textSize="25sp" />
 
             <ImageView
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:contentDescription="@string/cart_icon"
-                android:src="@drawable/cart" />
+                android:src="@drawable/ic_baseline_shopping_cart_24" />
         </LinearLayout>
     </RelativeLayout>
 
@@ -88,7 +90,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_medium"
-                android:text="Rp. 123"
+                android:text="$. 123"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="16sp" />

@@ -42,7 +42,7 @@ public class CompleteOrderActivity extends AppCompatActivity {
         recyclerView.setAdapter(adapter);
 
         int total = grandTotal(ItemData.getListOrder());
-        totalPriceTv.setText("Total: Rp. " + String.valueOf(total));
+        totalPriceTv.setText("Total: $. " + String.valueOf(total));
     }
 
     private int grandTotal(ArrayList<Item> items){

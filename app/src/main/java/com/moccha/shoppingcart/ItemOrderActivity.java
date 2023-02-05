@@ -47,7 +47,7 @@ public class ItemOrderActivity extends AppCompatActivity {
 
         if (item != null) {
             titleTv.setText(item.getName());
-            priceTv.setText(String.format("RP %s", String.valueOf(item.getPrice())));
+            priceTv.setText(String.format("$ %s", String.valueOf(item.getPrice())));
             imageVw.setImageDrawable(ContextCompat.getDrawable(this, item.getImg()));
             orderBtn.setOnClickListener(new View.OnClickListener() {
                 @Override

@@ -131,7 +131,7 @@
                             android:fontFamily="@font/poppins_semibold"
                             android:padding="20dp"
                             android:paddingStart="15dp"
-                            android:text="@string/drinks"
+                            android:text="@string/perfume"
                             android:textSize="20sp" />
 
                         <ImageView
@@ -141,8 +141,8 @@
                             android:layout_alignParentBottom="true"
                             android:layout_marginEnd="-20dp"
                             android:layout_marginBottom="-20dp"
-                            android:contentDescription="@string/drinks_image"
-                            android:src="@drawable/drink" />
+                            android:contentDescription="@string/perfume"
+                            android:src="@drawable/main1" />
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -170,7 +170,7 @@
                             android:fontFamily="@font/poppins_semibold"
                             android:padding="20dp"
                             android:paddingStart="15dp"
-                            android:text="@string/snacks"
+                            android:text="@string/cream"
                             android:textSize="20sp" />
 
                         <ImageView
@@ -180,8 +180,8 @@
                             android:layout_alignParentBottom="true"
                             android:layout_marginEnd="-20dp"
                             android:layout_marginBottom="-20dp"
-                            android:contentDescription="@string/snack_image"
-                            android:src="@drawable/snack" />
+                            android:contentDescription="@string/cream_image"
+                            android:src="@drawable/main3" />
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -209,7 +209,7 @@
                             android:fontFamily="@font/poppins_semibold"
                             android:padding="20dp"
                             android:paddingStart="15dp"
-                            android:text="@string/foods"
+                            android:text="@string/lipsticks"
                             android:textSize="20sp" />
 
                         <ImageView
@@ -219,8 +219,8 @@
                             android:layout_alignParentBottom="true"
                             android:layout_marginEnd="-20dp"
                             android:layout_marginBottom="-20dp"
-                            android:contentDescription="@string/foods_image"
-                            android:src="@drawable/food" />
+                            android:contentDescription="@string/lipsticks_image"
+                            android:src="@drawable/main2" />
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
 

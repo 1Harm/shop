@@ -50,7 +50,7 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.ViewHolder> 
         TextView text_price = (TextView) cardView.findViewById(R.id.item_price);
 
         text_title.setText(item.getName());
-        text_price.setText(String.format("Rp %s", String.valueOf(item.getPrice())));
+        text_price.setText(String.format("$ %s", String.valueOf(item.getPrice())));
 
         cardView.findViewById(R.id.removeBtn).setOnClickListener(new View.OnClickListener() {
             @Override

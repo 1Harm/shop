@@ -44,7 +44,7 @@ public class MyOrderActivity extends AppCompatActivity {
         adapter.notifyDataSetChanged();
 
         int total = grandTotal(ItemData.getListOrder());
-        totalPriceTv.setText("Total: Rp. " + String.valueOf(total));
+        totalPriceTv.setText("Total: $. " + String.valueOf(total));
 
         LinearLayout completeOrder = findViewById(R.id.order_complete);
         completeOrder.setOnClickListener(v -> {
